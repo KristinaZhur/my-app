@@ -24,6 +24,8 @@ function GreetingInput () {
             
             <button type = 'submit'>submit</button>
         </form>
+        
+        {/* как мне message отобразить в отделтном другом новом компоненте???*/}
         <Message message = {message} />
     </div>
         

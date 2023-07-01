@@ -8,7 +8,7 @@ function GreetingInput () {
     
     const handleInput =  (e) => {
         e.preventDefault()
-        setMessage(`hi ${firstName}`)
+        setMessage(`hi`)
         setName('')
     }
     
@@ -24,6 +24,8 @@ function GreetingInput () {
             
             <button type = 'submit'>submit</button>
         </form>
+        
+        {/* как мне message отобразить в отделтном другом новом компоненте???*/}
         <Message message = {message} />
     </div>
         
