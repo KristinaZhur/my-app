@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Message } from "./components/Message";
 
 function GreetingInput () {
+
     const [firstName, setName] = useState ('')
     const [message, setMessage] = useState('');
     
