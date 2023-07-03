@@ -8,21 +8,27 @@ function GreetingInput () {
     
     const handleInput =  (e) => {
         e.preventDefault()
-        setMessage(`hi ${firstName}`)
+        setMessage(`hi`)
         setName('')
     }
+    
+   
     return (
     <div>
         <form onSubmit={handleInput}> 
-        <input type = 'text' 
+        < input type = 'text' 
             name = 'firstName'
             value = {firstName}
-            onChange={(event) => setName(event.target.value)}
+            onChange={(e) => setName(e.target.value)}
         />
+            
             <button type = 'submit'>submit</button>
         </form>
+        
+        {/* как мне message отобразить в отделтном другом новом компоненте???*/}
         <Message message = {message} />
     </div>
+        
     )
 }
 export default GreetingInput;

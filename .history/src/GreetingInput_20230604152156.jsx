@@ -11,18 +11,24 @@ function GreetingInput () {
         setMessage(`hi ${firstName}`)
         setName('')
     }
+    
+   
     return (
     <div>
         <form onSubmit={handleInput}> 
-        <input type = 'text' 
+        < input type = 'text' 
             name = 'firstName'
             value = {firstName}
-            onChange={(event) => setName(event.target.value)}
+            onChange={(e) => setName(e.target.value)}
         />
+            
             <button type = 'submit'>submit</button>
         </form>
-        <Message message = {message} />
+        
+        {/* как мне message отобразить в отделтном другом новом компоненте???*/}
+        <Message />
     </div>
+        
     )
 }
 export default GreetingInput;
