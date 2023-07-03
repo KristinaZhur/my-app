@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from 'react';
+import { Message } from './components/Message/Message';
 
 function GreetingInput () {
     const [firstName, setName] = useState ('')
@@ -23,8 +24,7 @@ function GreetingInput () {
             
             <button type = 'submit'>submit</button>
         </form>
-        <p>{message}</p> 
-        {/* как мне message отобразить в отделтном другом новом компоненте???*/}
+        <Message message={message} />
     </div>
     )
 }
